@@ -1,0 +1,11 @@
+{
+  "fields": [
+    { "path": "name", "from": "full_name", "type": "string", "required": true },
+    { "path": "company", "from": "experience[0].company", "type": "string" },
+    { "path": "top_skills", "from": "skills[].name", "type": "string[]" },
+    { "path": "location_country", "from": "location.country", "type": "string" }
+  ],
+  "include_confidence": false,
+  "include_provenance": false,
+  "on_missing": "omit"
+}

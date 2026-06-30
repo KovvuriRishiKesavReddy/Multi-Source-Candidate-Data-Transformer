@@ -1,0 +1,155 @@
+[
+  {
+    "full_name": "Ananya Sharma",
+    "primary_email": "ananya.sharma@gmail.com",
+    "phone": "+919876512345",
+    "skills": [
+      "python",
+      "django",
+      "aws",
+      "kafka",
+      "system design"
+    ],
+    "confidence": 0.47,
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "recruiter_notes",
+        "method": "selected as highest-priority source"
+      },
+      {
+        "field": "emails",
+        "source": "recruiter_notes",
+        "method": "selected as primary (highest-priority source)"
+      },
+      {
+        "field": "phones",
+        "source": "recruiter_notes",
+        "method": "selected as primary (highest-priority source)"
+      },
+      {
+        "field": "experience[0].company",
+        "source": "recruiter_notes",
+        "method": "selected as highest-priority source"
+      },
+      {
+        "field": "experience[0].title",
+        "source": "recruiter_notes",
+        "method": "selected as highest-priority source"
+      },
+      {
+        "field": "skills[python]",
+        "source": "recruiter_notes",
+        "method": "union across sources, deduped by canonical skill name"
+      },
+      {
+        "field": "skills[django]",
+        "source": "recruiter_notes",
+        "method": "union across sources, deduped by canonical skill name"
+      },
+      {
+        "field": "skills[aws]",
+        "source": "recruiter_notes",
+        "method": "union across sources, deduped by canonical skill name"
+      },
+      {
+        "field": "skills[kafka]",
+        "source": "recruiter_notes",
+        "method": "union across sources, deduped by canonical skill name"
+      },
+      {
+        "field": "skills[system design]",
+        "source": "recruiter_notes",
+        "method": "union across sources, deduped by canonical skill name"
+      }
+    ]
+  },
+  {
+    "full_name": "Rohit Verma",
+    "primary_email": "rohit.verma@outlook.com",
+    "phone": null,
+    "skills": [
+      "product strategy",
+      "sql",
+      "figma",
+      "stakeholder management"
+    ],
+    "confidence": 0.463,
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "recruiter_notes",
+        "method": "selected as highest-priority source"
+      },
+      {
+        "field": "emails",
+        "source": "recruiter_notes",
+        "method": "selected as primary (highest-priority source)"
+      },
+      {
+        "field": "experience[0].company",
+        "source": "recruiter_notes",
+        "method": "selected as highest-priority source"
+      },
+      {
+        "field": "experience[0].title",
+        "source": "recruiter_notes",
+        "method": "selected as highest-priority source"
+      },
+      {
+        "field": "skills[product strategy]",
+        "source": "recruiter_notes",
+        "method": "union across sources, deduped by canonical skill name"
+      },
+      {
+        "field": "skills[sql]",
+        "source": "recruiter_notes",
+        "method": "union across sources, deduped by canonical skill name"
+      },
+      {
+        "field": "skills[figma]",
+        "source": "recruiter_notes",
+        "method": "union across sources, deduped by canonical skill name"
+      },
+      {
+        "field": "skills[stakeholder management]",
+        "source": "recruiter_notes",
+        "method": "union across sources, deduped by canonical skill name"
+      }
+    ]
+  },
+  {
+    "full_name": "Karthik Reddy",
+    "primary_email": "karthik.reddy.dev@gmail.com",
+    "phone": "+919000011122",
+    "skills": null,
+    "confidence": 0.5,
+    "provenance": [
+      {
+        "field": "full_name",
+        "source": "recruiter_notes",
+        "method": "selected as highest-priority source"
+      },
+      {
+        "field": "emails",
+        "source": "recruiter_notes",
+        "method": "selected as primary (highest-priority source)"
+      },
+      {
+        "field": "phones",
+        "source": "recruiter_notes",
+        "method": "selected as primary (highest-priority source)"
+      },
+      {
+        "field": "experience[0].company",
+        "source": "recruiter_notes",
+        "method": "selected as highest-priority source"
+      },
+      {
+        "field": "experience[0].title",
+        "source": "recruiter_notes",
+        "method": "selected as highest-priority source"
+      }
+    ]
+  }
+]

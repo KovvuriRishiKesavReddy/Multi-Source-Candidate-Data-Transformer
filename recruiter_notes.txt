@@ -1,0 +1,27 @@
+=== Candidate: Ananya Sharma ===
+Spoke with Ananya on a call today, seems like a strong fit for the backend role.
+Email: ananya.sharma@gmail.com
+Phone: 9876512345
+Currently at Razorpay as a Senior Backend Engineer, about 5 years of experience overall.
+Skills: Python, Django, AWS, Kafka, System Design
+She's also done some freelance work with Node.js on the side but that's not her main stack.
+Notes: very strong communicator, available to start in 4 weeks. Based in Bangalore.
+
+=== Candidate: Rohit Verma ===
+Phone screen notes - Rohit Verma
+email rohit.verma@outlook.com
+Currently PM at Freshworks. Looking for senior PM roles only.
+Skills: Product Strategy, SQL, Figma, Stakeholder Management
+Notes: open to relocation, prefers Mumbai or remote.
+
+=== Candidate: Karthik Reddy ===
+New candidate referred by an employee.
+karthik.reddy.dev@gmail.com
+Phone: +91 90000 11122
+Works at Postman as a Software Engineer II, mainly backend (Go, gRPC, Kubernetes).
+Notes: hasn't given notice yet, casual conversation only so far, comp expectations not discussed.
+
+=== Candidate: Priya Iyer ===
+Quick note from inbound application, not much detail yet.
+Mentioned she does data science work, didn't get email or phone confirmed on the call yet.
+Will follow up next week.

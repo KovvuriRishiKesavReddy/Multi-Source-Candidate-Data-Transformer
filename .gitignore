@@ -1,0 +1,9 @@
+echo ".venv/
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+*.egg-info/
+*.pyc
+output*.json
+output_default.json
+output_minimal.json" > .gitignore

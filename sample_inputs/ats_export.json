@@ -1,0 +1,86 @@
+{
+  "export_date": "2026-06-15",
+  "candidates": [
+    {
+      "candidate_name": "Ananya Sharma",
+      "email_address": "ananya.sharma@gmail.com",
+      "contact_number": "+91 98765 43210",
+      "employer": "Razorpay",
+      "job_title": "Senior Backend Engineer",
+      "skillset": "Python, Django, PostgreSQL, AWS",
+      "work_history": [
+        {
+          "org": "Razorpay",
+          "role": "Senior Backend Engineer",
+          "from": "2023-03",
+          "to": null
+        },
+        {
+          "org": "Zomato",
+          "role": "Backend Engineer",
+          "from": "2020-06",
+          "to": "2023-02"
+        }
+      ],
+      "academics": [
+        {
+          "school": "IIT Bombay",
+          "qualification": "B.Tech",
+          "major": "Computer Science",
+          "grad_year": 2020
+        }
+      ]
+    },
+    {
+      "candidate_name": "Rohit Verma",
+      "email_address": "rohit.verma@outlook.com",
+      "contact_number": "9123456780",
+      "employer": "Freshworks",
+      "job_title": "Product Manager",
+      "skillset": "Product Strategy, SQL, JIRA, Roadmapping",
+      "work_history": [
+        {
+          "org": "Freshworks",
+          "role": "Product Manager",
+          "from": "2022-01",
+          "to": null
+        }
+      ],
+      "academics": [
+        {
+          "school": "NIT Trichy",
+          "qualification": "B.E.",
+          "major": "Electronics",
+          "grad_year": 2018
+        }
+      ]
+    },
+    {
+      "candidate_name": "Priya Iyer",
+      "email_address": "priya.iyer.work@gmail.com",
+      "contact_number": "+91-99887-66554",
+      "employer": "Swiggy",
+      "job_title": "Data Scientist",
+      "skillset": "Python, ML, Pandas, scikit-learn",
+      "work_history": [
+        {
+          "org": "Swiggy",
+          "role": "Data Scientist",
+          "from": "2021-08",
+          "to": null
+        }
+      ],
+      "academics": []
+    },
+    {
+      "candidate_name": "",
+      "email_address": "not-an-email",
+      "contact_number": null,
+      "employer": "Unknown",
+      "job_title": null,
+      "skillset": null,
+      "work_history": [],
+      "academics": []
+    }
+  ]
+}
