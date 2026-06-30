@@ -7,9 +7,6 @@ per candidate — with provenance and confidence for every field. The output sha
 itself is driven by a runtime config, so the same engine can serve different
 consumers without any code changes.
 
-Full design reasoning (pipeline, schema, merge policy, confidence formula, edge
-cases) is in `Kovvuri Rishi Kesav Reddy_rishikesav2005@gmail.com_Eightfold.pdf`.
-This README covers how to actually run it.
 
 ## Setup
 
