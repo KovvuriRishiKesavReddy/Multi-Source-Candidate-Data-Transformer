@@ -85,13 +85,12 @@ signal, penalized in confidence).
 bonus − conflict penalty − fuzzy-match penalty, capped 0–1) — deliberately
 not learned, so every number is traceable to a one-line reason.
 
-**Config projection**: the projector reads only the canonical profile, never
-raw sources. `on_missing` (`null` / `omit` / `error`) governs scalar fields
-that are genuinely absent (`None` or empty string); an empty list is treated
-as a real, found-nothing result rather than missing data, so list fields pass
-through `on_missing` untouched. A config path that doesn't exist on the
-canonical schema at all is always a hard error, regardless of `on_missing`,
-since that's a config mistake rather than missing data.
+**Config projection**: the projector only ever reads the canonical profile, never
+the raw sources. `on_missing` (`null` / `omit` / `error`) applies to scalar fields
+that are genuinely empty (`None` or `""`) — an empty list counts as a real result,
+not missing data, so it isn't touched by `on_missing`. A config path that doesn't
+exist on the schema at all is always a hard error no matter what `on_missing` says,
+since that's a config bug, not missing data.
 
 ## Known limitations / descoped
 
@@ -211,13 +210,12 @@ python -m cli.main \
 ]
 ```
 
-Note Karthik Reddy's `skills` is `[]` here rather than `null`. His recruiter-notes block never has a `Skills:` labeled line (only loose prose mentioning Go/gRPC/Kubernetes that the extractor deliberately doesn't force-parse into structured skills), so skills resolves to an empty list. The projector treats an empty list as a genuine result — "we looked, found nothing" — distinct from a scalar field nobody ever populated. Only `None` and empty strings trigger `on_missing` handling; an empty list passes through untouched regardless of policy, since collapsing the two would make `on_missing: "omit"` strip out a perfectly valid empty-skills result for any candidate who genuinely has none listed.
+Note Karthik Reddy's `skills` is `[]` here, not `null`. His notes block never has a "Skills:" line (just loose mentions of Go/gRPC/Kubernetes that I'm not parsing as structured skills), so skills resolves to an empty list. I treat that as a real result — we looked and found nothing — not as missing data, so it doesn't get touched by `on_missing` the way a genuinely empty field (a `None`) would.
 
-Run against `config_minimal.json` — same 4 canonical profiles, different field names,
-confidence/provenance stripped. `on_missing: "omit"` still drops genuinely missing
-scalar fields (see Priya's `location_country`, omitted below since she has no
-location data at all), but Karthik's `top_skills` now appears as an empty list
-rather than being omitted, since an empty list is a real result, not missing data:
+Run against `config_minimal.json` — same 4 profiles, different field names, no
+confidence/provenance. `on_missing: "omit"` still drops genuinely missing scalar
+fields (Priya's `location_country` is gone below since she has no location data),
+but Karthik's `top_skills` stays as an empty list instead of getting dropped:
 
 ```bash
 python -m cli.main \
